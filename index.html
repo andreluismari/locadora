@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locaway - Aluguel de Carros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="Projeto-site/img/locaway.jfif" alt="Logotipo da Locaway">
+        <div>
+          <h1>Locaway</h1>
+          <p>A melhor locadora do sul do mundo</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Pesquisa -->
+  <section id="search-section" class="section">
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Digite o nome do carro..." onkeyup="filterCars()">
+      <button type="button" class="search-btn">Pesquisar</button>
+    </div>
+  </section>
+
+  <!-- Carros Disponíveis (Agora dinâmico) -->
+  <section id="carros" class="section">
+    <h2 class="section-title">Carros Disponíveis</h2>
+    <div id="car-grid" class="car-grid">
+      <!-- Os cards dos carros serão inseridos dinamicamente aqui -->
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-container">
+      <p class="footer-address">Endereço: Avenida Tupi, 9999 - Pato Branco - Paraná</p>
+      <p>&copy; 2024 Locaway. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
